@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PenguinStore Badge sample</title>
+    <link href="../favicon.ico" rel="shortcut icon" />
+</head>
+<body>
+    <h2>PenguinStore Badge sample page</h2>
+    <p>This page shows you the PenguinStore badge in all currently supported languages</p>
+    <p>Upon clicking a badge the uri in the form of penguinstore-app:_yourappnamehere_ will be invoked</p>
+    <p>In this sample the uri is penguinstore-app:ImgurUWP</p>
+    <p>NOTE: This sample only works if PenguinStore is installed on your system</p>
+    <h4>English</h4>
+    <img src="Assets/PenguinStoreBadge-en.png" onclick="BtnAction();"/>
+    <h4>French</h4>
+    <img src="Assets/PenguinStoreBadge-fr.png" onclick="BtnAction();"/>
+    <h4>German</h4>
+    <img src="Assets/PenguinStoreBadge-de.png" onclick="BtnAction();" />
+</body>
+<style>
+    body {
+        background-color: #282828;
+    }
+
+    p, a, h1, h2, h3, h4, h5, h6 {
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>
+<script>
+    function BtnAction() {
+        window.location.href = "penguinstore-app:ImgurUWP";
+    }
+</script>
+</html>
